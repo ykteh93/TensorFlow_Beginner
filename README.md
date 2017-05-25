@@ -3,7 +3,7 @@ Classifying handwritten digit with MNIST dataset
 
 This purpose of this project is to understand the foundation of forward and backward propagation of neural network.
 
-Note: The accuracy is not the main purpose here, therefore all files only have the accuracy of slightly above 90%.
+Note: The accuracy is not the main purpose here, therefore the accuracy in all files is only slightly above 90%.
 
 <br><br/>
 There are two versions (each with 3 files) in this repository:

@@ -14,6 +14,12 @@ There are two versions in this repository:
   <dd> This is the exact equivalent but using only numpy to understand the chain-rule derivative in backward propagation.</dd>
 </dl>
 
+<dl>
+  <dt> &rarr;</dt>
+  <dd> &rarr;</dd>
+  <dd> &rarr;</dd>
+</dl>
+
 <br><br/>
 
 The required library:

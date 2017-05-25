@@ -4,7 +4,6 @@ Classifying handwritten digit with MNIST dataset
 This project is to understand the foundation of forward and backward propagation of neural network.
 
 <br> &nbsp;
-<br> &nbsp;
 There are two versions in this repository:
 
 <dl>
@@ -15,7 +14,8 @@ There are two versions in this repository:
   <dd> This is the exact equivalent but using only numpy to understand the chain-rule derivative in backward propagation.</dd>
 </dl>
 
-
+<br> &nbsp;
+<br> &nbsp;
 The required library:
 * TensorFlow
 * numpy

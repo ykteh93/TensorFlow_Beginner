@@ -15,7 +15,7 @@ There are two versions in this repository:
 </dl>
 
 <dl>
-  <dt> The architecture </dt>
+  <dt> The architecture of neural network in each file:</dt>
   <dd> A: input &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
   <dd> B: input &rarr; hidden layer (128 units) + Relu &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
   <dd> C: input &rarr; 2 * hidden layer (256 units) + Relu &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>

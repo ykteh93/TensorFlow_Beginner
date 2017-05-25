@@ -12,7 +12,7 @@ There are two versions in this repository:
 ⋅⋅⋅this is the exact equivalent but with using only numpy
 
 The required library:
-⋅⋅* TensorFlow
-⋅⋅* numpy
-⋅⋅* pandas
-⋅⋅* matplotlib
+* TensorFlow
+* numpy
+* pandas
+* matplotlib

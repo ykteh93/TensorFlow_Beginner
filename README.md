@@ -11,7 +11,7 @@ There are two versions (each with 3 files) in this repository:
   <dd> This is similar to the tutorial provided at the official website of TensorFlow.</dd>
   
    <dt> 2. Without Tensorflow implementation:</dt>
-  <dd> This is the exact equivalent but using only numpy to implement everything including chain-rule derivative in backward propagation.</dd>
+  <dd> This is the exact equivalent but using only numpy to implement everything (inc. chain-rule derivative in backward propagation).</dd>
 </dl>
 
 <dl>

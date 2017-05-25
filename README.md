@@ -17,8 +17,8 @@ There are two versions in this repository:
 <dl>
   <dt> The architecture </dt>
   <dd> A: input &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
-  <dd> B: input &rarr; hidden layer (128 units) &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
-  <dd> C: input &rarr; non-linear layer &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
+  <dd> B: input &rarr; hidden layer (128 units) + Relu &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
+  <dd> C: input &rarr; hidden layer (256 units) + Relu &rarr; hidden layer (256 units) + Relu &rarr; linear layer &rarr; softmax &rarr; class probabilities</dd>
 </dl>
 
 <br><br/>

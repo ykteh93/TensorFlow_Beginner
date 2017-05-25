@@ -18,7 +18,7 @@ Train_error = np.array([])
 Test_error = np.array([])
 learning_rate = 0.8  # Learning rate for stochastic gradient descent
 batch_size = 100     # Size of mini batch for each training
-number_epochs = 10  # Number of desired epochs
+number_epochs = 10   # Number of desired epochs
 
 # Network Parameters
 number_input = 784   # Data input (reshape from 28x28 to  784)

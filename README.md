@@ -14,8 +14,8 @@ There are two versions in this repository:
   <dd> This is the exact equivalent but using only numpy to understand the chain-rule derivative in backward propagation.</dd>
 </dl>
 
-<br> &nbsp;
-<br> &nbsp;
+<br><br/>
+<br><br/>
 The required library:
 * TensorFlow
 * numpy

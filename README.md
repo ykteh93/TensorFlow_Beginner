@@ -6,8 +6,11 @@ This project is to understand the foundation of forward and backward propagation
 There are two versions in this repository:
 
 <dl>
-  <dt>1. With TensorFlow implementation:</dt>
-  <dd>This is similar to the tutorial provided at the official website of TensorFlow</dd>
+  <dt> 1. With TensorFlow implementation:</dt>
+  <dd> This is similar to the tutorial provided at the official website of TensorFlow</dd>
+  
+   <dt> 2. Without Tensorflow implementation:</dt>
+  <dd> This is the exact equivalent but with using only numpy</dd>
 </dl>
 
 1. With TensorFlow implementation:

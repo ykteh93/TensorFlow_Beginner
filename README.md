@@ -1,4 +1,4 @@
-# TensorFlow_Beginner
+# TensorFlow for Beginner
 Classifying handwritten digit with MNIST dataset
 
 This purpose of this project is to understand the foundation of forward and backward propagation in neural network.

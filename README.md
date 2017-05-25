@@ -4,7 +4,7 @@ Classifying handwritten digit with MNIST dataset
 This project is to understand the foundation of forward and backward propagation of neural network.
 
 <br><br/>
-There are two versions in this repository:
+There are two versions (each with 3 files) in this repository:
 
 <dl>
   <dt> 1. With TensorFlow implementation:</dt>

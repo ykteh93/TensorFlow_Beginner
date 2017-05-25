@@ -13,7 +13,6 @@ There are two versions in this repository:
    <dt> 2. Without Tensorflow implementation:</dt>
   <dd> This is the exact equivalent but using only numpy to understand the chain-rule derivative in backward propagation.</dd>
 </dl>
-
 <br><br/>
 <br><br/>
 The required library:

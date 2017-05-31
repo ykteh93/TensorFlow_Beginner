@@ -21,7 +21,7 @@ batch_size = 100     # Size of mini batch for each training
 number_epochs = 10   # Number of desired epochs
 
 # Network Parameters
-number_input = 784   # Data input (reshape from 28x28 to  784)
+number_input = 784   # Data input (reshape from 28x28 to 784)
 number_classes = 10  # Total number of classes (0-9 digits)
 
 # Graph Input

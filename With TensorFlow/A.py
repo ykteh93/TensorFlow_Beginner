@@ -14,33 +14,32 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 # Parameters
-Train_error = np.array([])
-Test_error = np.array([])
+Train_error = Test_error = np.array([])
 learning_rate = 0.8  # Learning rate for stochastic gradient descent
-batch_size = 100     # Size of mini batch for each training
+batch_size    = 100  # Size of mini batch for each training
 number_epochs = 10   # Number of desired epochs
 
 # Network Parameters
-number_input = 784   # Data input (reshape from 28x28 to 784)
+number_input   = 784 # Data input (reshape from 28x28 to 784)
 number_classes = 10  # Total number of classes (0-9 digits)
 
 # Graph Input
 input_x = tf.placeholder(tf.float32, shape=[None, number_input])
-true_y = tf.placeholder(tf.float32, shape=[None, number_classes])
+true_y  = tf.placeholder(tf.float32, shape=[None, number_classes])
 
 # All layers of weights and biases
 weights = {'out': tf.Variable(tf.zeros([number_input, number_classes]))}
-biases = {'out': tf.Variable(tf.zeros([number_classes]))}
+biases  = {'out': tf.Variable(tf.zeros([number_classes]))}
 
 # Predict the label
 predict_y = tf.matmul(input_x, weights['out']) + biases['out']
 
 # Compute the cross-entropy loss and optimize with stochastic gradient descent to reduce the loss
 cross_entropy_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(predict_y, true_y))
-training = tf.train.GradientDescentOptimizer(learning_rate).minimize(cross_entropy_loss)
+training           = tf.train.GradientDescentOptimizer(learning_rate).minimize(cross_entropy_loss)
 
 # Compute the average accuracy by counting the number of correct predicted label
-accuracy = tf.equal(tf.argmax(predict_y, 1), tf.argmax(true_y, 1))
+accuracy         = tf.equal(tf.argmax(predict_y, 1), tf.argmax(true_y, 1))
 average_accuracy = tf.reduce_mean(tf.cast(accuracy, tf.float32))
 
 # Join the predicted label with the true label for the plot of confusion matrix
@@ -60,11 +59,11 @@ with tf.Session() as sess:
         # Display the training error of each mini batch and the test error of the whole test set at each epochs
         if epochs % batch_size == 0:
             error_mini_train = 1-sess.run(average_accuracy, feed_dict={input_x: minibatch_x, true_y: minibatch_y})
-            error_full_train = 1 - sess.run(average_accuracy, feed_dict={input_x: mnist.train.images, true_y: mnist.train.labels})
-            error_test = 1-sess.run(average_accuracy, feed_dict={input_x: mnist.test.images, true_y: mnist.test.labels})
+            error_full_train = 1-sess.run(average_accuracy, feed_dict={input_x: mnist.train.images, true_y: mnist.train.labels})
+            error_test       = 1-sess.run(average_accuracy, feed_dict={input_x: mnist.test.images, true_y: mnist.test.labels})
             print("Epoch %4d -- Mini Batch Train Error: %f -- Full Set Train Error: %f -- Full Set Test Error: %f" % (epochs/ batch_size, error_mini_train, error_full_train, error_test))
             Train_error = np.append(Train_error, error_full_train)
-            Test_error = np.append(Test_error, error_test)
+            Test_error  = np.append(Test_error, error_test)
 
     # Plot the Error Rate of Train and Test Set
     x = np.linspace(0, number_epochs-1, num=number_epochs)
@@ -78,7 +77,7 @@ with tf.Session() as sess:
 
     # Compute the accuracy and error rate for the whole set of train and test data
     accuracy_train = sess.run(average_accuracy, feed_dict={input_x: mnist.train.images, true_y: mnist.train.labels})
-    accuracy_test = sess.run(average_accuracy, feed_dict={input_x: mnist.test.images, true_y: mnist.test.labels})
+    accuracy_test  = sess.run(average_accuracy, feed_dict={input_x: mnist.test.images, true_y: mnist.test.labels})
     print("\nOverall Train Accuracy %g" % accuracy_train)
     print("Overall Test Accuracy %g" % accuracy_test)
     print("Overall Train Error Rate %g" % (1-accuracy_train))

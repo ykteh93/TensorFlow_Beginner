@@ -80,12 +80,5 @@ with tf.Session() as sess:
     print('------------------ Confusion Matrix ------------------')
     print(pd.DataFrame(confusion_matrix))
 
-    # Store the parameter value of weight and bias into text file
-    sys.stdout = open('Parameter_P1_a (All Weights & Biases).txt', 'w')
-    print('------------------ Weights ------------------')
-    print(weights['out'].eval())
-    print('\n------------------ Biases ------------------')
-    print(biases['out'].eval())
-
     # Save the model
     saver.save(sess, './model/A')

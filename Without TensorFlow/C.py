@@ -69,7 +69,7 @@ def feed_backward(layer_1, layer_2, predicted_y, x, true_y):
 # Stochastic gradient descent
 def gradient_descent(train_x, train_y, test_x, test_y):
     Train_error = Test_error = np.array([])
-    # sys.stdout  = open('Train_and_Test_Error.txt', 'w')
+    sys.stdout  = open('Train_and_Test_Error.txt', 'w')
 
     for epochs in range(number_epochs):
         for e in range(int(mnist.train.num_examples / batch_size)):
